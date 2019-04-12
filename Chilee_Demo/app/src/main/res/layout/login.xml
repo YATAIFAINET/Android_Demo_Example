@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="會員登入"
+        android:layout_margin="10dp"
+        android:textSize="18dp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="帳號："
+            android:layout_margin="10dp"/>
+        <EditText
+            android:id="@+id/Login_Account_Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_gravity="bottom"
+            android:hint="請填寫"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="密碼："
+            android:layout_margin="10dp"/>
+        <EditText
+            android:id="@+id/Login_Pass_Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_gravity="bottom"
+            android:hint="請填寫"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/Login_Button"
+            android:text="登入"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/Login_Regi_Button"
+            android:text="註冊"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/Login_Forget_Button"
+            android:text="忘記密碼"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
